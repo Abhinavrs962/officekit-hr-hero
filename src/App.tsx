@@ -9,6 +9,10 @@ import AboutUs from "./pages/AboutUs";
 import Pricing from "./pages/Pricing";
 import Contact from "./pages/Contact";
 import RecruitmentManagement from "./pages/features/RecruitmentManagement";
+import Blog from "./pages/resources/Blog";
+import FutureOfHRTech from "./pages/resources/blog/FutureOfHRTech";
+import RemoteWorkBestPractices from "./pages/resources/blog/RemoteWorkBestPractices";
+import EmployeeOnboardingGuide from "./pages/resources/blog/EmployeeOnboardingGuide";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +28,10 @@ const App = () => (
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/features/recruitment-management" element={<RecruitmentManagement />} />
+          <Route path="/resources/blog" element={<Blog />} />
+          <Route path="/resources/blog/future-of-hr-tech" element={<FutureOfHRTech />} />
+          <Route path="/resources/blog/remote-work-best-practices" element={<RemoteWorkBestPractices />} />
+          <Route path="/resources/blog/employee-onboarding-guide" element={<EmployeeOnboardingGuide />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
